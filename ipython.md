@@ -99,11 +99,13 @@ MathJs
 
 Display is equivalent of print for rich data:
 
-```from IPython.display import display
+```
+from IPython.display import display
 from IPython.display import Image
 i = Image(filename='blabla.png')
 display(i)
-i # or just evaluate it````
+i # or just evaluate it
+```
 
 Fetch Image from a remote network and display the image, which will be embedded as hot link and will only work when internet is available:
 
