@@ -158,8 +158,8 @@ To get current profile location:
 
 `get_ipython().profile_dir.location`
 
-`c = get_config()
-c.InteractiveShellApp.ignore_old_config = True`
+```c = get_config()
+c.InteractiveShellApp.ignore_old_config = True```
 
 Profile startup directory contains files which run in lexographically sorted order upon startup:
 
