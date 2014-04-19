@@ -13,14 +13,15 @@ Quit cursor mode:
 
 Move around, select, copy using emacs bindings:
 
-`C-p
+```
+C-p
 C-n
 C-a
 C-b
 C-f
 M-w
 C-space
-`
+```
 
 Paste:
 
