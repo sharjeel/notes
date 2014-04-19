@@ -122,8 +122,10 @@ HTML embedding
 
 Javascript:
 
-```%%javascript
-// some javascript here```
+```
+%%javascript
+// some javascript here
+```
 
 Other python libraries can provide special functions to dispplay their data in IPython notebook, for instance SymPy.
 
@@ -133,7 +135,8 @@ IFrame embedding:
 
 ### Interactive Widgets (Micro-GUIs in the browser)
 
-```from IPytohn.html.widgets import interact, fixed
+```
+from IPytohn.html.widgets import interact, fixed
 interact(f, x=(0.0, 5.0), y="some string", z={'US': 'United States', 'PK': 'Pakistan'})
 
 f.widget.children[0] # x
@@ -146,7 +149,8 @@ Interactive decorator:
 ```
 @interact
 def sorter(string='Hello', reverse=Flse):
-    print ''.join(sorted(string, reverse=reverse)```
+    print ''.join(sorted(string, reverse=reverse)
+```
 
 ### Profiles
 
@@ -167,8 +171,10 @@ Profile startup directory contains files which run in lexographically sorted ord
 
 Register line magic:
 
-```@register_line_magic
+```
+@register_line_magic
 def somefunc(line)
     """ Some description """
-    pass```
+    pass
+```
 
