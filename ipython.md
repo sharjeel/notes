@@ -88,7 +88,7 @@ or from the terminal:
 Markdown texts are possible. Just use the celltype a markdown.
 
 Latex:
-
+    
 `$latex (inline equation)`
 
 MathJs
@@ -99,11 +99,11 @@ MathJs
 
 Display is equivalent of print for rich data:
 
-`from IPython.display import display
+```from IPython.display import display
 from IPython.display import Image
 i = Image(filename='blabla.png')
 display(i)
-i # or just evaluate it`
+i # or just evaluate it````
 
 Fetch Image from a remote network and display the image, which will be embedded as hot link and will only work when internet is available:
 
@@ -111,8 +111,8 @@ Fetch Image from a remote network and display the image, which will be embedded 
 
 Embed YouTube:
 
-`from IPython.display import YouTubeVideo
-YouTubeVideo('vw9Vk2VIkD8')`
+```from IPython.display import YouTubeVideo
+YouTubeVideo('vw9Vk2VIkD8')```
 
 HTML embedding
 
@@ -122,8 +122,8 @@ HTML embedding
 
 Javascript:
 
-`%%javascript
-// some javascript here`
+```%%javascript
+// some javascript here```
 
 Other python libraries can provide special functions to dispplay their data in IPython notebook, for instance SymPy.
 
@@ -133,19 +133,20 @@ IFrame embedding:
 
 ### Interactive Widgets (Micro-GUIs in the browser)
 
-`from IPytohn.html.widgets import interact, fixed
+```from IPytohn.html.widgets import interact, fixed
 interact(f, x=(0.0, 5.0), y="some string", z={'US': 'United States', 'PK': 'Pakistan'})
 
 f.widget.children[0] # x
 f.widget.children[1] # y
 f.widget.children[2] # z
-`
+```
 
 Interactive decorator:
 
+```
 @interact
 def sorter(string='Hello', reverse=Flse):
-    print ''.join(sorted(string, reverse=reverse)
+    print ''.join(sorted(string, reverse=reverse)```
 
 ### Profiles
 
@@ -166,8 +167,8 @@ Profile startup directory contains files which run in lexographically sorted ord
 
 Register line magic:
 
-`@register_line_magic
+```@register_line_magic
 def somefunc(line)
     """ Some description """
-    pass`
+    pass```
 
