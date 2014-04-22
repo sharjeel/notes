@@ -22,6 +22,10 @@ $ echo $!
 world
 ```
 
+Repeat first argument of the last command: `!^`
+n-th argument: `!:n`
+
+
 Change the path in the current directory by replacing: `cd old new`
 
 ```
@@ -31,8 +35,6 @@ $ cd java javatests
 $ pwd
 /home/user/javatests/com/example/hello/world/
 ```
-
-
 
 
 
