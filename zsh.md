@@ -13,7 +13,7 @@ git diff **/Network*.py
 
 ### Histoy repetition
 
-Repeat last argument of the last command: `!$`
+Repeat last argument of the last command: `!$` or `ESC-.` or `Alt-.`
 
 ```
 $ echo hello world
