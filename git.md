@@ -35,3 +35,7 @@ Diff only filenames between two branches
 Dif between five revisions back
 
 `git diff HEAD HEAD~n`
+
+Show file from another branch
+
+`git show branch:./path/to/file`
