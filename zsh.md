@@ -36,5 +36,12 @@ $ pwd
 /home/user/javatests/com/example/hello/world/
 ```
 
+### Key Bindings
+
+List all key bindings `bindkey`
+
+List keymaps `bindkey -l`
+
+List keymap linked to main `binkey -lL main`
 
 
