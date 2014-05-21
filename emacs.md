@@ -32,3 +32,6 @@ Delete indentation
 
 `M-^`
 
+Paste in the search mini-buffer
+
+`C-s M-y`
