@@ -41,6 +41,22 @@ Moves around:
 
 `C-b <left|right|up|down>`
 
+Kill current pane:
+
+`C-b x`
+
+Kill all panes except this one:
+
+`C-b !`
+
+Swap location of panes
+
+`C-b C-o`
+
+Identify panes
+
+`C-b q`
+
 ### Sessions
 
 Start new:
