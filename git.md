@@ -39,3 +39,18 @@ Dif between five revisions back
 Show file from another branch
 
 `git show branch:./path/to/file`
+
+### Undo
+
+Undo last commit with changes staged
+
+`git reset --soft 'HEAD~1'`
+
+Undo last commit with changes discarded
+
+`git reset --hard HEAD~1`
+
+Undo soft reset
+
+`git reset HEAD@{1}`
+
