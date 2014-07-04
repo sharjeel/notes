@@ -13,6 +13,18 @@ Find key shortcut for a function
 or
 `C-h w function-name`
 
+Go Back:
+
+`C-x C-SPC` or `C-x C-@`
+
+Save in register: 
+
+`C-x r s`
+
+Insert from register:
+
+`C-x r i` or `C-x r g`
+
 Filter lines:
 
 ```
