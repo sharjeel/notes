@@ -83,4 +83,30 @@ Kill session:
 
 `tmux kill-session -t sessname`
 
+Rename current session:
 
+`C-b $`
+
+### Configuration
+
+User's config file location:
+
+`~/.tmux.conf`
+
+Command Prompt (REPL):
+
+`C-b :`
+
+### Help
+
+List Keys: 
+
+`tmux list-keys`
+
+List every command and it's arguments:
+
+`tmux list-commands`
+
+List detailed info about every session:
+
+`tmux info`
