@@ -61,13 +61,25 @@ Load next cell input from a file:
 
 `%load somedir/somefile`
 
-Drop PDB for debugging
-
-`%debug`
-
 Make matploblib show inline instead of popping up a window
 
 `%matplotlib inline`
+
+### Debugging
+
+Run another script under debugging
+
+`%run -t`
+`%run -d`
+
+Jump into debugger after an exception occurs
+
+`%debug`
+
+Automatically start the debugger on uncaught exceptions
+
+`%pdb`
+
 
 ### IPython Sessions 
 
