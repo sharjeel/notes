@@ -75,6 +75,14 @@ Attached to named sesssion:
 
 `tmux a -t sessname`
 
+Detach from session:
+
+`C-b d`
+
+Detach other clients:
+
+`C-b D`
+
 List sessions:
 
 `tmux ls`
