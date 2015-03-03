@@ -47,3 +47,15 @@ Delete indentation
 Paste in the search mini-buffer
 
 `C-s M-y`
+
+Kill rectangle
+
+`C-x r k`
+
+Blank out rectangle
+
+`C-x r c`
+
+Add prefix each line in rectangle
+
+`C-x r t`
