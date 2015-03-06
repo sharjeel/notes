@@ -59,3 +59,11 @@ Blank out rectangle
 Add prefix each line in rectangle
 
 `C-x r t`
+
+Repeat last command
+
+`C-x z`
+
+Repeat last command 3 times
+
+`C-x z z z`
