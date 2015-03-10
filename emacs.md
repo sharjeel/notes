@@ -71,3 +71,12 @@ Repeat last command
 Repeat last command 3 times
 
 `C-x z z z`
+
+Search the word following the mark
+
+`C-s C-w`
+
+Search the word before the mark
+
+`C-r C-w`
+
