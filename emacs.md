@@ -15,6 +15,10 @@ or
 
 Go Back:
 
+`C-u C-SPC` or `C-u C-@`
+
+Go back in different buffers:
+
 `C-x C-SPC` or `C-x C-@`
 
 Save in register: 
