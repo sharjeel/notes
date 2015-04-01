@@ -187,8 +187,17 @@ Register line magic:
 
 ```
 @register_line_magic
-def somefunc(line)
+def sayhi(line)
     """ Some description """
-    pass
+    return "Hello, " + line
 ```
 
+Register line magic as well as cell magic:
+
+```
+@register_line_magic
+@register_cell_magic
+def helloword(line, cell='')
+    """ Greet with a story """
+    return "Hello, " + line + "\nStory goes like this: " + line
+```
