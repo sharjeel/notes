@@ -44,4 +44,8 @@ List keymaps `bindkey -l`
 
 List keymap linked to main `binkey -lL main`
 
+## Help
 
+Help on a builtin function `run-help func-name`
+
+Help on user contributed items `run-help run-help`
