@@ -80,3 +80,16 @@ Search the word before the mark
 
 `C-r C-w`
 
+### Macros
+
+Start keyboard macro recording
+
+`C-x (` or `F3`
+
+Stop keyboard macro recording
+
+`C-x )` or `F4`
+
+Execute macro
+
+`C-x e` or `F4`
