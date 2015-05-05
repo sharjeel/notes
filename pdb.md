@@ -1,7 +1,8 @@
 # PDB
 
+```
 l - list 11 lines
-p - 
+p - print a variable value
 s - step into
 n - next, step over
 r - return, step out
@@ -12,3 +13,4 @@ b lineno - set a breakpoint at lineno
 b lineno, cond - set a breakpoint at lineno with condition cond e.g. a==0
 b file:lineno - set a breakpoint in file at lineno
 clear number - clear breakpoint number
+```
