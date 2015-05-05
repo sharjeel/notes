@@ -80,6 +80,10 @@ Search the word before the mark
 
 `C-r C-w`
 
+Edit the search mini-buffer
+
+`M-a`
+
 ### Macros
 
 Start keyboard macro recording
