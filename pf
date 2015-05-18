@@ -1,0 +1,8 @@
+Disable firewall (for temporary use only):
+
+`pfctl -d`
+
+Re-enable temporarily disabled firewall:
+
+`pfctl -e`
+
