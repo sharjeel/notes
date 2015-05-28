@@ -87,7 +87,9 @@ Applying a transformation on each row of a column
 
 ```
 result['increased_salary'] = result['salary'].apply(lambda salary: salary + salary * 0.10)
-result['increased_salary'] = result.apply(lambda df: df['salary'] + df['salary'] *  df['performance_evaluation'])
+result['increased_salary'] = result.apply(
+  lambda row: row['salary'] + row['salary'] *  row['performance_evaluation'],
+  axis=1)
 ```
 
 ### Data selection and filtering
