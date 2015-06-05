@@ -82,7 +82,7 @@ Search the word before the mark
 
 Edit the search mini-buffer
 
-`M-a`
+`M-e`
 
 ### Macros
 
