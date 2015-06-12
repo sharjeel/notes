@@ -84,6 +84,10 @@ Edit the search mini-buffer
 
 `M-e`
 
+Search Regexp
+
+`C-M-s` and `C-M-r`
+
 ### Macros
 
 Start keyboard macro recording
