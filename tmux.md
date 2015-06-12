@@ -57,6 +57,10 @@ Identify panes
 
 `C-b q`
 
+Set layout
+
+`C-b M-{1..5}`
+
 ### Sessions
 
 Start new:
