@@ -52,6 +52,10 @@ Paste in the search mini-buffer
 
 `C-s M-y`
 
+Mark rectangle (emacs 24.4+)
+
+`C-x SPC`
+
 Kill rectangle
 
 `C-x r k`
