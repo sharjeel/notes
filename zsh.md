@@ -36,6 +36,8 @@ $ pwd
 /home/user/javatests/com/example/hello/world/
 ```
 
+Swap the parameters of the last command with `Alt-T`
+
 ### Key Bindings
 
 List all key bindings `bindkey`
