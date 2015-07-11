@@ -112,6 +112,10 @@ Redirect output to an emacs buffer
 
 `cat mylog.log >> #<buffer *scratch*>`
 
+or to append at the point
+
+`cat mylog.log >>> #<buffer *scratch*>`
+
 Use emacs variables in eshell
 
 ```
@@ -119,4 +123,14 @@ $ echo foo bar baz > #'myvar
 $ echo $(cadr myvar)
 bar
 ```
+
+Pseudo-devices
+
+```
+$ echo 'This goes to clipboard' > /dev/clip
+$ echo 'This gets to kill-ring' > /dev/kill
+```
+
+The variable `eshell-virtual-targets` can be used to add more pseudo-devices.
+
 
