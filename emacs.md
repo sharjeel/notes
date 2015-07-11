@@ -105,3 +105,11 @@ Stop keyboard macro recording
 Execute macro
 
 `C-x e` or `F4`
+
+### Eshell
+
+Redirect output to an emacs buffer
+
+`cat mylog.log >> #<buffer *scratch*>`
+
+
