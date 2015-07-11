@@ -112,4 +112,11 @@ Redirect output to an emacs buffer
 
 `cat mylog.log >> #<buffer *scratch*>`
 
+Use emacs variables in eshell
+
+```
+$ echo foo bar baz > #'myvar
+$ echo $(cadr myvar)
+bar
+```
 
