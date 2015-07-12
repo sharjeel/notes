@@ -34,6 +34,10 @@ Runs bash as it is, $etc run unmodified
 
 `%%bash`
 
+Grep a Python string
+
+`!echo -e ${json.dumps(s)}  | grep include`
+
 Eval it as it is:
 
 `>>> while a < b:
