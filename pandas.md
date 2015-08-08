@@ -96,16 +96,20 @@ result['increased_salary'] = result.apply(
 
 SQL equivalent of WHERE field equals: 
 
-`employees[employee.department_id == 3]`
+`employee[employee.department_id == 3]`
 
 And'ing and Or'ing
 
 ```
-employees[(employee.department_id == 2) | (employee.salary > 10000)]
-employees[(employee.department_id == 3) & (employee.salary < 50000)]
+employee[(employee.department_id == 2) | (employee.salary > 10000)]
+employee[(employee.department_id == 3) & (employee.salary < 50000)]
 ```
 
+String search
 
+`employee[(employee['bio'].contains("Java")]`
 
+Regex also works
 
+`employee[(employee['bio'].contains("Python|Ruby")]`
 
