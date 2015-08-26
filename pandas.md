@@ -113,3 +113,6 @@ Regex also works
 
 `employee[(employee['bio'].contains("Python|Ruby")]`
 
+Convert column data into list
+
+`list(employee['salary'])`
