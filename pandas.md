@@ -116,3 +116,13 @@ Regex also works
 Convert column data into list
 
 `list(employee['salary'])`
+
+Iterate over rows:
+
+```
+for i, r in df.iterrows():
+  print "Record number: " + i
+  print "Employee Name: %s" % r.name
+  print "Department: %s" % r.department
+```
+  
