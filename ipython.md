@@ -187,11 +187,18 @@ Profile startup directory contains files which run in lexographically sorted ord
 
 `$profile/startup/`
 
+Line and cell magics:
+
+```
+from IPython.core.magic import (register_line_magic, register_cell_magic,
+                                register_line_cell_magic)
+```
+
 Register line magic:
 
 ```
 @register_line_magic
-def sayhi(line)
+def sayhi(line):
     """ Some description """
     return "Hello, " + line
 ```
@@ -201,7 +208,7 @@ Register line magic as well as cell magic:
 ```
 @register_line_magic
 @register_cell_magic
-def helloword(line, cell='')
+def helloword(line, cell=''):
     """ Greet with a story """
     return "Hello, " + line + "\nStory goes like this: " + line
 ```
