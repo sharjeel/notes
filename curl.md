@@ -9,6 +9,10 @@ Send header
 
 `curl --header "SomeHeader: Somevalue" <url>`
 
+e.g. bytes range header
+
+`curl --header "Range: bytes=0-1024 <url>`
+
 Include header in the output
 
 `curl -i <url>`
