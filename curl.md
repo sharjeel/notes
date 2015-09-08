@@ -11,7 +11,7 @@ Send header
 
 e.g. bytes range header
 
-`curl --header "Range: bytes=0-1024 <url>`
+`curl --header "Range: bytes=0-1024" <url>`
 
 Include header in the output
 
