@@ -124,6 +124,10 @@ $ echo $(cadr myvar)
 bar
 ```
 
+Open a file
+
+`find-file filename`
+
 Pseudo-devices
 
 ```
