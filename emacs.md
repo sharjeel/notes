@@ -13,6 +13,14 @@ Find key shortcut for a function
 or
 `C-h w function-name`
 
+Describe Key bindings
+
+`M-x describe-bindings`
+
+Info engine
+
+`M-x info`
+
 Go Back:
 
 `C-u C-SPC` or `C-u C-@`
