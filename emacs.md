@@ -106,6 +106,10 @@ Execute macro
 
 `C-x e` or `F4`
 
+Balance Windows
+
+`C-x +`
+
 ### Eshell
 
 Redirect output to an emacs buffer
