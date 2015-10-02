@@ -92,6 +92,10 @@ Search the word before the mark
 
 `C-r C-w`
 
+Find all occurances of a regexp
+
+`M-x occur`
+
 Edit the search mini-buffer
 
 `M-e`
