@@ -52,6 +52,10 @@ C-q C-j
 , 
 ```
 
+Query replace to interactively replace:
+
+`M-x query-replace` or `M-%`
+
 Delete indentation
 
 `M-^`
