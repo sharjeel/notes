@@ -126,6 +126,17 @@ Balance Windows
 
 `C-x +`
 
+Eval in minibuffer
+
+`M-:`
+
+To get full path of current buffer, use the variable `buffer-file-name`
+
+```
+M-:
+buffer-file-name
+```
+
 ### Eshell
 
 Redirect output to an emacs buffer
