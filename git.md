@@ -54,3 +54,8 @@ Undo soft reset
 
 `git reset HEAD@{1}`
 
+### Moving around partial changes
+
+Apply a stash in reverse
+
+`git stash show -p stash@{0} | git apply -R`
