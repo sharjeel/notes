@@ -126,3 +126,6 @@ for i, r in df.iterrows():
   print "Department: %s" % r.department
 ```
   
+Print without index:
+
+`print df.to_string(index=False)
