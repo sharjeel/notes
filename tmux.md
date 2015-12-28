@@ -109,6 +109,10 @@ Command Prompt (REPL):
 
 `C-b :`
 
+Reload tmux conf:
+
+`C-b : source-file ~/.tmux.conf`
+
 ### Help
 
 List Keys: 
