@@ -84,3 +84,50 @@ arg[0] = "script"
 arg[1] = "a"
 arg[2] = "b"
 ```
+
+## Types
+
+Lua is dynamically typed. There are eight basic types: nil, boolean, number, string, userdata, function, thread and table. `type()` function returns type of a given value. e.g. `type("sharjeel") --> string`.
+
+### Integers
+
+Lua has no integer type. Numbers are double-precision floating point. It is also possible to compile Lua to use single precision or long for arithmetic operations, specially for CPUs which don't have hardware support for floating point. 
+
+### Strings
+
+Lua is 8-bit clean. Strings may contain any numeric value including embedded zeroes and other binary data. String are immutable -- you apply modification to create a new string. e.g.:
+
+```
+a = "one string"
+b = string.gsub(a, 'one', "another") -- substitute
+print(a) -- one string
+print(b) -- another string
+````
+
+C-like escape sequences are supported in Lua. e.g.: `\n New line \r Carriage return \t tab \v vertical tab \\ backslash \[ square bracket \" \'`. `\ddd` where ddd is a three lettered digit, replaces with ASCII eqiuvalents of the number.
+
+Multiline strings can be written with square brackets:
+
+```
+page = [[
+<html>
+  <head><title>This is a title</title></head>
+  <body> whteva! </body>
+</html>
+]]
+```
+
+Automatic conversion with the best effort when doing numeric operations in mix with strings:
+
+```
+print("10" + 1) --> 11
+print("5" * "6") --> 30
+print("hello" + 1) --> error
+```
+
+Conversely, it also tries to convert numbers to string: `print(10 .. 20)` prints a string with value "1020".
+
+However `10 == "10"` is always `false`. Explicit conversion can be done with `tonumber` and `tostring` which convert or return nil in case of errors.
+
+
+
