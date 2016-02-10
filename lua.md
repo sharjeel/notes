@@ -149,8 +149,32 @@ points = {}; point.x = 0; point.y = 0
 nums = {"One", "Two", "Three"}
 nums.lang = "English"
 num[4] = "Four"
+```
+
+The initialization of tables can be mix record and list style intialization at the same time:
 
 ```
+video_comments = {url="https://www.youtube.com/watch?v=jNQXAC9IVRw", views=835412817,
+             "first comment on youtube ever",
+             "internet explorer finally loaded this video",
+             "why is this his ONLY video in 10 years why hasnt he uploaded more?",
+             "say hello if you are watching in february 2016﻿"
+           }
+```
+
+The record initialization syntax requires proper identifier names for keys and hence disallows using negative indices, abitrary indices and non-variable name identifiers. To overcome this, there is special syntax:
+
+`a = { [-273] = "absolute zero", ["-"] = "sub", ["+"] = "add", [100] = "Century" }`
+
+This may be used to make arrays start at zero index:
+
+`nums = { [0] = "Zero", "One", "Two", "Three" }`
+
+Semicolons can also be used in place of commas. They are usually used to separate record for its last apart.
+
+`{x=10, y=45; "one", "two", "three"}`
+
+
 
 ## Expressions
 
