@@ -129,5 +129,35 @@ Conversely, it also tries to convert numbers to string: `print(10 .. 20)` prints
 
 However `10 == "10"` is always `false`. Explicit conversion can be done with `tonumber` and `tostring` which convert or return nil in case of errors.
 
+### Tables
+
+Python equivalent of map. Lua uses tables to represent ordinary arrays, symbol tables, sets, records, queues and other data structures. Packaes are also represented by tables. To Lua `io.read` means use the `read` entry from `io` table. 
+
+`a = {} -- create an empty table`
+
+## Expressions
+
+### Relational and logical operators
+
+`< > <= >= == ~=`, all of them return true or false. `~=` is the negation of equality.
+
+Lua compares tables, userdata and function by reference. Lua compares strings in alphabetical order which follows the locale set for Lua. Order comparison results in error. e.g.: `2 < "15" -- error`.
+
+`and`, `or` and `not` are the logical operators. They consider `false` and `nil` as false and everything else as `true`. Short-circuit evaluation is used. `and` returns its first argument if it is false, otherwise second argument. For `or`, it is converse. e.g.
+
+```
+print (4 or 5) -- 4
+print (4 and 5) -- 5
+```
+
+Useful idiom: `x = x or v`
+
+### Concatenation
+
+Concatenation is denoted by two dots `..`. If any operand is a number, it is converted to a string.
+
+```
+print(0 .. 1) -- 01
+print("Hello" .. "world") -- helloworld
 
 
