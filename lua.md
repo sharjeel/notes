@@ -106,6 +106,8 @@ print(b) -- another string
 
 C-like escape sequences are supported in Lua. e.g.: `\n New line \r Carriage return \t tab \v vertical tab \\ backslash \[ square bracket \" \'`. `\ddd` where ddd is a three lettered digit, replaces with ASCII eqiuvalents of the number.
 
+Regular expressions are escaped using `%`. e.g. `string.match("10.15.3",6 "%.")`
+
 Multiline strings can be written with square brackets:
 
 ```
@@ -174,7 +176,13 @@ Semicolons can also be used in place of commas. They are usually used to separat
 
 `{x=10, y=45; "one", "two", "three"}`
 
+Getting the size of the table, or the len() equivalent of Python:
 
+`table.getn(t)` or using the length operator introduced in 5.1: `#t`
+
+Appending at the end of array:
+
+`table.insert(t, val)` to `t[#t+1] = val` 
 
 ## Expressions
 
@@ -200,5 +208,5 @@ Concatenation is denoted by two dots `..`. If any operand is a number, it is con
 ```
 print(0 .. 1) -- 01
 print("Hello" .. "world") -- helloworld
-
+```
 
