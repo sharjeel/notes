@@ -133,7 +133,24 @@ However `10 == "10"` is always `false`. Explicit conversion can be done with `to
 
 Python equivalent of map. Lua uses tables to represent ordinary arrays, symbol tables, sets, records, queues and other data structures. Packaes are also represented by tables. To Lua `io.read` means use the `read` entry from `io` table. 
 
-`a = {} -- create an empty table`
+```
+-- Empty table
+a = {} 
+
+-- Creating arrays. Index starts at 1.
+days = {"Tuesday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}
+first = days[1]
+
+-- Create a Record. Following two lines are equivalent.
+point = {x=0, y=0}
+points = {}; point.x = 0; point.y = 0
+
+-- Tables are pretty much mutable
+nums = {"One", "Two", "Three"}
+nums.lang = "English"
+num[4] = "Four"
+
+```
 
 ## Expressions
 
