@@ -44,6 +44,7 @@ Block comments
 this block comment
 spans multiple lines
 --]]
+```
 
 If first line of a lua file is `#`, it is ignored to keep up with unix compatibility of scripts. 
 
@@ -210,3 +211,63 @@ print(0 .. 1) -- 01
 print("Hello" .. "world") -- helloworld
 ```
 
+## Packages
+
+Lua does not provide an explicit mechanism for packages but they can be implemented using other language features. by representing each package by a table, the way standard libraries do. There are several different methods to write a package.
+
+A simple way is to use table and declare each ofthe methods as a new package. Using local variable not exposed outside and making a global package name alias to that local variable drops the requirement of explicitly prefixing everything with the package name.
+
+```
+local P = {}
+complex = P
+
+function P.new (r, i) 
+  return {r=r, i=i}
+end
+
+-- defines a constant 'i'
+P.i = P.new(0, 1)
+
+-- Function internal to the package
+local function checkComplex (c)
+  if not ( type(c) == "table" and tonumber(c.r) and tonumber(c.i)) then
+    error("bad complex number", 3)
+  end
+end
+
+-- Adds two complex numbers
+function P.add(c1, c2)
+  checkComplex(c1)
+  checkComplex(c2)
+  return P.new(c1.r + c2.r, c1.i + c2.i)
+end
+
+--...similarly other functions...--
+
+```
+
+Now we can use any complex operation like this:
+
+`c = complex.add(complex.i, complex.new(100,200))`
+
+An alternative is to make all functions local then export them using a table:
+
+```
+local function new (r, i)
+  return {r=r, i=i}
+end
+
+local function add(c1, c2)
+  return new(c1.r+c2.r, c1.i+c2.i)
+end
+
+--...
+
+complex = {
+  new = new,
+  add = add,
+  sub = sub,
+  mul = mul,
+  div = div
+}
+```
