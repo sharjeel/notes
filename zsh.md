@@ -46,7 +46,21 @@ List keymaps `bindkey -l`
 
 List keymap linked to main `binkey -lL main`
 
-## Help
+### Positional Arguments
+
+`$n` contains the nth arg where $0 is the name of the script/function itself. `$*` gets all the args passed to the script, without the scriptname itself, i.e. $* doesn't include $0. 
+
+To split out parameters:
+
+```
+echoargs () {
+  firstparam = $1
+  shift 1
+  echo "All passed args except first: " $*
+}
+```
+
+### Help
 
 Help on a builtin function `run-help func-name`
 
