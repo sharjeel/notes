@@ -171,7 +171,7 @@ The record initialization syntax requires proper identifier names for keys and h
 
 This may be used to make arrays start at zero index:
 
-`nums = { [0] = "Zero", "One", "Two", "Three" }`
+`nums = { [0] = "Zero", "One", "Two", "Three" }` (although, don't use it because of the pitfall. #nums still shows three elements instead of four because [0] is part of hashmap and not the array of the table).
 
 Semicolons can also be used in place of commas. They are usually used to separate record for its last apart.
 
@@ -202,6 +202,12 @@ print (4 and 5) -- 5
 
 Useful idiom: `x = x or v`
 
+### Arithmetic Operators
+
+Lua supports binary `+ - * /` and unary `-` for real numbers. Also partially supports exponetiation `^` whose implementation is not part of Lua core but is accessible through mathematical library.
+
+
+
 ### Concatenation
 
 Concatenation is denoted by two dots `..`. If any operand is a number, it is converted to a string.
@@ -210,6 +216,66 @@ Concatenation is denoted by two dots `..`. If any operand is a number, it is con
 print(0 .. 1) -- 01
 print("Hello" .. "world") -- helloworld
 ```
+
+### Functions
+
+First class values which can be stored in variables, passed as other function parameters and returned as results. Both functions written in Lua as well as in C can be called. 
+
+## Statements
+
+### Assignments
+
+Lua supports multiple assignments:
+
+`a, b = 10, 2*x`
+
+Can also be used for swapping values:
+
+```
+x, y = y, x
+a[i], a[j] = a[j], a[i]
+```
+
+Lua self adjusts the values
+
+```
+a, b, c = 1, 2     -- c is nil
+a, b, c = 0        -- Surprise! b and c both are nil
+```
+
+Useful to return multiple values from a function call:
+
+```
+result, err = f()
+```
+
+
+
+
+### Loops
+
+
+
+*For* loop:
+
+```
+-- read 10 lines storing them in a table
+a = {}
+for i=1,10 do
+  a[i] = io.read()
+end
+```
+
+Python's enumerate equivalent is ipairs:
+
+```
+-- print the lines
+for i,line in ipairs(a) do
+  print("Line number "..i.." is "..line)
+end
+```
+
+
 
 ## Packages
 
