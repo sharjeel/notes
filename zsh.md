@@ -59,6 +59,27 @@ echoargs () {
   echo "All passed args except first: " $*
 }
 ```
+### For loop iteration
+
+```
+for i in {1..10} do
+  echo $i
+  echo Do Something else
+done
+```
+
+Or single item iteration
+
+`for i in {1..10}; echo $i`
+
+Works for globs as well
+
+```
+for i in *.c do
+  echo Stats of $i
+  wc $i
+done
+```
 
 ### Help
 
