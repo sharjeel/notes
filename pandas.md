@@ -1,6 +1,25 @@
 Pandas (Python)
 ===
 
+## Reading data
+
+Create test data inline
+
+```
+from StringIO import StringIO
+
+data = """Make,Model
+Honda,Accord
+Honda,Odyssey
+Toyota,Corolla
+Toyota,Camrey
+"""
+
+df = pandas.read_csv(StringIO(data))
+
+```
+
+
 ## Basic rows access
 
 Trim rows by index range:
@@ -128,4 +147,4 @@ for i, r in df.iterrows():
   
 Print without index:
 
-`print df.to_string(index=False)
+`print df.to_string(index=False)`
