@@ -76,6 +76,10 @@ Combining or union:
 
 `pandas.concat([result1, result2])`
 
+Set difference
+
+`a[~b.isin(a).all(1)]`
+
 Concatenate horozontally:
 
 `pandas.concat([result1, result2], axis=1)`
@@ -95,7 +99,6 @@ grouped_data.sum()
 grouped_data.mean()
 grouped_data.median()
 ```
-
 Operations within a group, e.g. distinct count and sorting:
 
 `grouped_data.title.nunique().order(ascending=False)[5:]`
