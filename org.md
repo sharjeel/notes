@@ -80,6 +80,11 @@ TODO
 * DONE Fix door :home:
 ```
 
+Insert new TODO item: `S-M-<ret>`
+
+Toggle checkbox: `C-c C-c`
+
+
 ## Tables
 
 Any line with starting with `|` as first non-whitespace character is considered part of a table.
