@@ -108,6 +108,10 @@ Search Regexp
 
 `C-M-s` and `C-M-r`
 
+Search current symbol
+
+`M-s .` and `M-s _`
+
 ### Macros
 
 Start keyboard macro recording
