@@ -141,6 +141,12 @@ M-:
 buffer-file-name
 ```
 
+Switch window layouts between horizontal and vertical with `transpose-frame` command
+
+```
+C-c =
+```
+
 ### Eshell
 
 Redirect output to an emacs buffer
